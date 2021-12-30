@@ -4,4 +4,12 @@ import router from "./router";
 import store from "./store";
 import "./assets/tailwind.css";
 
-createApp(App).use(store).use(router).mount("#app");
+let app;
+
+if (!app) {
+  app = createApp(App);
+
+  app.use(store);
+  app.use(router);
+  app.mount("#app");
+}
