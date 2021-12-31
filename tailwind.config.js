@@ -6,6 +6,7 @@ module.exports = {
       colors: {
         primary: "#FBE8A6",
         secondary: "#F4976C",
+        dark: "#303C6C",
       },
       fontFamily: {
         rain: ["rain"],
