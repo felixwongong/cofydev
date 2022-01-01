@@ -5,12 +5,6 @@
         <div>
           <h2 class="font-rain font-bold text-lg antialiased">V-USE</h2>
         </div>
-        <div class="w-16">
-          <img
-            src="@/assets/dist/img/coffee.png"
-            class="object object-scale-down"
-          />
-        </div>
         <ul class="flex flex-row justify-evenly items-center">
           <li class="mx-3 font-rain tracking-wider">
             <a
@@ -34,6 +28,12 @@
             >
           </li>
         </ul>
+        <div class="w-16">
+          <img
+            src="@/assets/dist/img/coffee.png"
+            class="object object-scale-down"
+          />
+        </div>
       </div>
     </nav>
   </div>

@@ -5,3 +5,9 @@
 @tailwind components;
 
 @tailwind utilities;
+
+@layer components {
+  .title {
+    @apply font-rain text-2xl font-extrabold border-b-4 border-dark border-dashed inline-block;
+  }
+}

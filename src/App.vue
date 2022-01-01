@@ -2,6 +2,8 @@
   <Header />
   <Hero />
   <Divider />
+
+  <router-view />
 </template>
 
 <style></style>
