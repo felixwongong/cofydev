@@ -25,9 +25,16 @@
       </p>
     </TSection>
     <TSection title="Portal">
-      <p class="font-rain tracking-wide font-semibold">
-        The craftman is busy celebrating the New Year. Please wait a moment
-      </p>
+      <LinkCard fa="fab fa-github" href="https://github.com/felixwongong" />
+      <LinkCard
+        fa="fab fa-instagram"
+        href="https://www.instagram.com/vuse_code/"
+      />
+      <LinkCard
+        fa="fab fa-youtube-square"
+        href="https://www.youtube.com/channel/UCUfMLuCKG9XcHGjdqeMTcXw/about"
+      />
+      <LinkCard fa="fab fa-itch-io" href="https://yuenlfelix.itch.io/" />
     </TSection>
   </section>
 </template>
@@ -36,6 +43,7 @@
 import Tile from "@/components/Tile.vue";
 import Profile from "@/components/Home/Profile.vue";
 import TSection from "@/components/util/TitledSection.vue";
+import LinkCard from "@/components/util/LinkCard.vue";
 
 export default {
   name: "Home",
@@ -43,6 +51,7 @@ export default {
     Profile,
     Tile,
     TSection,
+    LinkCard,
   },
 };
 </script>

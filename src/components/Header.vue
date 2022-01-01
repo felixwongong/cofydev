@@ -3,15 +3,19 @@
     <nav class="max-w-screen-md h-full mx-auto">
       <div class="h-full flex flex-row justify-between items-center px-8">
         <div>
-          <h2 class="font-rain font-bold text-lg antialiased">V-USE</h2>
+          <router-link
+            :to="{ name: 'home' }"
+            class="font-rain font-bold text-lg antialiased"
+            >V-USE</router-link
+          >
         </div>
         <ul class="flex flex-row justify-evenly items-center">
           <li class="mx-3 font-rain tracking-wider">
-            <a
-              href="#"
+            <router-link
+              :to="{ name: 'work' }"
               class="py-0.5 border-transparent border-b-2 hover:border-gray-600"
-              >Work</a
-            >
+              >Work
+            </router-link>
           </li>
           <li class="mx-3 font-rain tracking-wider">
             <a
