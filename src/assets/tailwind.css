@@ -10,4 +10,10 @@
   .title {
     @apply font-rain text-2xl font-extrabold border-b-4 border-dark border-dashed inline-block;
   }
+  .overlay {
+    @apply w-full h-full absolute bg-deepblue opacity-0  hover:opacity-90 transition-opacity;
+  }
+  .btn {
+    @apply font-rain font-bold py-1 px-2 rounded-lg border-dashed border-2 border-dark;
+  }
 }
