@@ -1,5 +1,5 @@
 <template>
-  <section class="py-12">
+  <section>
     <Tile />
     <TSection
       title="Works"
@@ -10,18 +10,14 @@
         class="flex flex-row justify-evenly flex-wrap gap-x-6 gap-y-14"
       >
         <Card
-          imageUrl="https://img.itch.zone/aW1nLzY2NDE0NDEuanBn/347x500/D5lOac.jpg"
-          workName="Space Invader"
-          description="Remake of the first game I made in Unity"
-          workLinkName="Be A Pilot Now!"
-          workLink="https://yuenlfelix.itch.io/space-invader"
-        />
-        <Card
-          imageUrl="https://img.itch.zone/aW1nLzY4NTgzMTEuanBn/347x500/qHYplD.jpg"
-          workName="GroWhaos"
-          description="Brackeys 2021.2 Game Jam"
-          workLinkName="LET THERE BE CHAOS!"
-          workLink="https://yuenlfelix.itch.io/brackeys-game-jam-growhaos"
+          v-for="(work, i) in works"
+          :key="i"
+          :id="work.id"
+          :imageUrl="work.imageUrl"
+          :workName="work.name"
+          :description="work.shortDescription"
+          :workLinkName="work.linkName"
+          :workLink="work.link"
         />
       </Container>
     </TSection>
@@ -29,6 +25,8 @@
 </template>
 
 <script>
+import { db, collection, getDocs } from "@/includes/firebase.js";
+
 import Tile from "@/components/Tile.vue";
 import TSection from "@/components/util/TitledSection.vue";
 import Card from "@/components/Work/WorkCard.vue";
@@ -41,6 +39,21 @@ export default {
     TSection,
     Card,
     Container,
+  },
+
+  data() {
+    return {
+      works: [],
+      dataReady: false,
+    };
+  },
+
+  async mounted() {
+    const workDoc = await getDocs(collection(db, "work"));
+    workDoc.forEach((doc) => {
+      this.works.push({ ...doc.data(), id: doc.id });
+    });
+    this.dataReady = true;
   },
 };
 </script>

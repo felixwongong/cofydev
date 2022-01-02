@@ -1,5 +1,5 @@
 <template>
-  <Card class="w-72 relative cursor-key shadow-2xl">
+  <Card class="w-72 relative shadow-2xl">
     <ImageContainer :url="imageUrl" />
     <div class="overlay rounded-2xl">
       <div
@@ -11,10 +11,14 @@
             {{ description }}
           </p>
         </div>
-        <a :href="workLink" class="btn bg-secondary text-sm">{{
+        <a :href="workLink" class="btn bg-secondary text-sm z-40">{{
           workLinkName
         }}</a>
       </div>
+      <router-link
+        :to="{ name: 'detail', params: { id: id } }"
+        class="absolute top-0 left-0 w-full h-full rounded-2xl cursor-key"
+      ></router-link>
     </div>
   </Card>
 </template>
@@ -30,6 +34,9 @@ export default {
     ImageContainer,
   },
   props: {
+    id: {
+      require: true,
+    },
     imageUrl: {
       default: "https://pngtree.com/so/no/",
     },

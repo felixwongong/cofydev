@@ -1,5 +1,5 @@
 <template>
-  <section class="py-12">
+  <section>
     <Tile />
     <Profile />
     <TSection

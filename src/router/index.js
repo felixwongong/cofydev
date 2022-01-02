@@ -1,6 +1,7 @@
 import { createRouter, createWebHistory } from "vue-router";
 import Home from "@/views/Home.vue";
 import Work from "@/views/Work.vue";
+import Detail from "@/views/Detail.vue";
 
 const routes = [
   {
@@ -12,6 +13,14 @@ const routes = [
     name: "work",
     path: "/work",
     component: Work,
+  },
+  {
+    name: "detail",
+    path: "/work/:id",
+    component: Detail,
+    meta: {
+      noHero: true,
+    },
   },
 ];
 

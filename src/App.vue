@@ -1,9 +1,17 @@
 <template>
   <Header />
-  <Hero />
-  <Divider />
 
-  <router-view v-slot="{ Component }">
+  <router-view v-slot="{ Component, route }" class="my-16">
+    <transition
+      enter-active-class="animate__animated animate__fadeInDown"
+      leave-active-class="animate__animated animate__fadeOutUp"
+      mode="out-in"
+    >
+      <div v-show="!route.meta.noHero">
+        <Hero />
+        <Divider />
+      </div>
+    </transition>
     <transition
       enter-active-class="animate__animated animate__fadeInUp"
       leave-active-class="animate__animated animate__fadeOutDown"
@@ -14,17 +22,7 @@
   </router-view>
 </template>
 
-<style>
-/* .fade-enter,
-.fade-leave-to {
-  opacity: 0;
-}
-
-.fade-enter-active,
-.fade-leave-active {
-  transition: opacity 0.5s ease-out;
-} */
-</style>
+<style></style>
 
 <script>
 import "animate.css";
