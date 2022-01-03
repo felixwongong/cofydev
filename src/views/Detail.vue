@@ -71,8 +71,6 @@ export default {
       this.work = docSnap.data();
       this.path.push(this.work.name);
       this.dataReady = true;
-    } else {
-      console.log("No such document!");
     }
   },
 };

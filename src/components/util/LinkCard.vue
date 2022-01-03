@@ -1,6 +1,7 @@
 <template>
   <Card
-    class="w-max my-2 py-2 px-5 font-rain tracking-wide font-semibold"
+    class="w-max my-2 py-2 px-5 font-rain tracking-wide font-semibold link-card"
+    id=""
     @mouseover="cardHover = true"
     @mouseleave="cardHover = false"
   >
@@ -11,6 +12,12 @@
     <a :href="href" class="my-auto">{{ hrefInfo }}</a>
   </Card>
 </template>
+
+<style scoped>
+.link-card {
+  margin-right: 0.5rem;
+}
+</style>
 
 <script>
 import Card from "@/components/util/Card.vue";
