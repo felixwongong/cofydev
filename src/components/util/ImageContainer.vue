@@ -1,5 +1,5 @@
 <template>
-  <div class="bg-light">
+  <div class="bg-light rounded-2xl">
     <img :src="url" class="object-cover h-48 w-96 rounded-2xl" />
   </div>
 </template>

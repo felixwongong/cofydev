@@ -7,15 +7,16 @@
       class="font-rain tracking-wide font-semibold text-lg"
     >
       <p>
-        A student boi who love developing anything like games, website, artwork
+        A student boi who loves developing anything like games, website, artwork
         (aka pixel art n 3D model), music... and more!
       </p>
       <p>
-        A people whose life sticks with programming, building blocks, and
-        solving problems.
+        A human whose life sticks with programming, building blocks, and solving
+        problems.
       </p>
+      <p>A gamer hopes to wear NervGear and kills slime in fantasy world</p>
       <p>
-        The 0.000000001% musician(?) who plays BAAAAASS and drum, taking cover
+        A 0.000000001% musician(?) who plays BAAAAASS and drum, taking cover
         once in a while
       </p>
     </TSection>

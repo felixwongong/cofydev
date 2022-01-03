@@ -18,9 +18,6 @@ const routes = [
     name: "detail",
     path: "/work/:id",
     component: Detail,
-    meta: {
-      noHero: true,
-    },
   },
 ];
 

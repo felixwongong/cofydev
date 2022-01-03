@@ -1,5 +1,5 @@
 <template>
-  <section>
+  <section v-if="dataReady">
     <Tile />
     <TSection
       title="Works"
@@ -8,7 +8,6 @@
       <Container
         width="max-w-screen-sm"
         class="flex flex-row justify-evenly flex-wrap gap-x-6 gap-y-14"
-        v-if="dataReady"
       >
         <Card
           v-for="(work, i) in works"
@@ -26,7 +25,7 @@
 </template>
 
 <script>
-import { db, collection, getDocs } from "@/includes/firebase.js";
+import { workCollection, getDocs } from "@/includes/firebase.js";
 
 import Tile from "@/components/Tile.vue";
 import TSection from "@/components/util/TitledSection.vue";
@@ -50,7 +49,7 @@ export default {
   },
 
   async mounted() {
-    const workDoc = await getDocs(collection(db, "work"));
+    const workDoc = await getDocs(workCollection);
     workDoc.forEach((doc) => {
       this.works.push({ ...doc.data(), id: doc.id });
     });

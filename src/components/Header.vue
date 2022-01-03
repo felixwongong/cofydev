@@ -5,9 +5,16 @@
         <div>
           <router-link
             :to="{ name: 'home' }"
-            class="font-rain font-bold text-lg antialiased"
-            >V-USE</router-link
+            class="font-rain font-bold text-lg antialiased flex flex-row items-center"
           >
+            <div class="w-8">
+              <img
+                src="@/assets/dist/img/coffee.gif"
+                class="object object-scale-down my-auto"
+              />
+            </div>
+            <h2>Felix Wong</h2>
+          </router-link>
         </div>
         <ul class="flex flex-row justify-evenly items-center">
           <li class="mx-3 font-rain tracking-wider">
@@ -24,17 +31,10 @@
               >Post</a
             >
           </li>
-          <li class="mx-3 font-rain tracking-wider">
-            <a
-              href="#"
-              class="py-0.5 border-transparent border-b-2 hover:border-gray-600"
-              >Tutorial</a
-            >
-          </li>
         </ul>
-        <div class="w-16">
+        <div class="w-8">
           <img
-            src="@/assets/dist/img/coffee.png"
+            src="@/assets/dist/img/sun.gif"
             class="object object-scale-down"
           />
         </div>

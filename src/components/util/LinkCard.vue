@@ -8,7 +8,7 @@
       <i class="fa-2x" :class="fa"></i>
     </div>
     <div class="w-10"></div>
-    <a :href="href">{{ href }}</a>
+    <a :href="href" class="my-auto">{{ href }}</a>
   </Card>
 </template>
 
