@@ -13,8 +13,8 @@
       </div>
     </transition>
     <transition
-      enter-active-class="animate__animated animate__fadeInUp"
-      leave-active-class="animate__animated animate__fadeOutDown"
+      :enter-active-class="route.meta.enterClass"
+      :leave-active-class="route.meta.leaveClass"
       mode="out-in"
     >
       <component :is="Component" />
