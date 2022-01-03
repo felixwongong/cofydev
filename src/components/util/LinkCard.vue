@@ -1,6 +1,6 @@
 <template>
   <Card
-    class="w-min my-2 py-2 px-5 font-rain tracking-wide font-semibold"
+    class="w-max my-2 py-2 px-5 font-rain tracking-wide font-semibold"
     @mouseover="cardHover = true"
     @mouseleave="cardHover = false"
   >
@@ -8,7 +8,7 @@
       <i class="fa-2x" :class="fa"></i>
     </div>
     <div class="w-10"></div>
-    <a :href="href" class="my-auto">{{ href }}</a>
+    <a :href="href" class="my-auto">{{ hrefInfo }}</a>
   </Card>
 </template>
 
@@ -22,7 +22,7 @@ export default {
       cardHover: false,
     };
   },
-  props: ["href", "fa"],
+  props: ["href", "fa", "hrefInfo"],
   components: {
     Card,
   },

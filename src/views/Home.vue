@@ -26,16 +26,26 @@
       </p>
     </TSection>
     <TSection title="Portal">
-      <LinkCard fa="fab fa-github" href="https://github.com/felixwongong" />
+      <LinkCard
+        fa="fab fa-github"
+        href="https://github.com/felixwongong"
+        hrefInfo="All the project repo"
+      />
       <LinkCard
         fa="fab fa-instagram"
         href="https://www.instagram.com/vuse_code/"
+        hrefInfo="Come and check my post!"
       />
       <LinkCard
         fa="fab fa-youtube-square"
         href="https://www.youtube.com/channel/UCUfMLuCKG9XcHGjdqeMTcXw/about"
+        hrefInfo="Some random streaming"
       />
-      <LinkCard fa="fab fa-itch-io" href="https://yuenlfelix.itch.io/" />
+      <LinkCard
+        fa="fab fa-itch-io"
+        href="https://yuenlfelix.itch.io/"
+        hrefInfo="My Games"
+      />
     </TSection>
   </section>
 </template>
