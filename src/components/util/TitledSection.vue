@@ -1,7 +1,7 @@
 <template>
   <Container>
     <section>
-      <h2 class="title my-4 text-dark">{{ title }}</h2>
+      <h2 class="title my-4 text-dark mx-auto">{{ title }}</h2>
       <slot />
     </section>
   </Container>
