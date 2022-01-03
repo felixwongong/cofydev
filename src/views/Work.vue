@@ -8,6 +8,7 @@
       <Container
         width="max-w-screen-sm"
         class="flex flex-row justify-evenly flex-wrap gap-x-6 gap-y-14"
+        v-if="dataReady"
       >
         <Card
           v-for="(work, i) in works"
