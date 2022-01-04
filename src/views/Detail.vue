@@ -2,7 +2,7 @@
   <div v-if="dataReady">
     <Breadcrumb :path="path" />
 
-    <Container width="max-w-max">
+    <Container width="md:max-w-max">
       <Card>
         <div class="bg-light rounded-2xl">
           <img :src="work.imageUrl" class="object-contain h-auto rounded-2xl" />
@@ -10,7 +10,7 @@
       </Card>
     </Container>
 
-    <Container width="max-w-screen-sm">
+    <Container width="md:max-w-screen-sm">
       <Card
         class="flex flex-col space-y-2 items-start py-2 px-6 font-rain font-semibold tracking-wider"
       >

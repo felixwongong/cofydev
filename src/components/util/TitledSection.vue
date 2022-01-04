@@ -1,7 +1,9 @@
 <template>
   <Container>
     <section>
-      <h2 class="title my-4 text-dark mx-auto">{{ title }}</h2>
+      <div class="mx-auto my-8 md:my-4 md:block flex justify-center">
+        <h2 class="title text-dark">{{ title }}</h2>
+      </div>
       <slot />
     </section>
   </Container>
