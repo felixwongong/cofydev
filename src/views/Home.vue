@@ -34,7 +34,7 @@
         />
         <LinkCard
           fa="fab fa-instagram"
-          href="https://www.instagram.com/vuse_code/"
+          href="https://www.instagram.com/cofylife/"
           hrefInfo="Come and check my post!"
         />
         <LinkCard

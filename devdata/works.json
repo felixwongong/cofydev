@@ -1,0 +1,11 @@
+[
+  {
+    "id": "space-invader",
+    "name": "Space Invader",
+    "shortDescription": "Remake of the first game I made in Unity",
+    "longDescription": "My first self-created project. Please feel free to leave a review below, or any (bugs, improvement, feature) that I can update on. <br>I would be glad if anyone of you enjoys this game!<br>Credit:<br>MUSIC:<br>Menu BGM: https://nicolemariet.itch.io/spy-8-bit-16-bit by Nicole Marie T<br>In-game BGM: https://big58.itch.io/8bit-ost-the-saga by BIG58<br>SFX: https://kronbits.itch.io/freesfx by Kronbits<br>GRAPHICS<br>8*8 SPACE SHOOTER ASSET https://gvituri.itch.io/space-shooter by  Gustavo Vituri<br>Pixel Planets https://faktory.itch.io/pixel-planets by FaKtory Games",
+    "link": "https://yuenlfelix.itch.io/space-invader",
+    "linkName": "Be a Pilot Now!",
+    "tag": ["Game", "Unity", "2D", "Shooter"]
+  }
+]

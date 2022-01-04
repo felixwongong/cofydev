@@ -9,7 +9,7 @@
       <i class="fa-2x" :class="fa"></i>
     </div>
     <div class="w-10"></div>
-    <a :href="href" class="my-auto">{{ hrefInfo }}</a>
+    <a :href="href" target="_blank" class="my-auto">{{ hrefInfo }}</a>
   </Card>
 </template>
 
