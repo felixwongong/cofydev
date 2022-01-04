@@ -39,7 +39,7 @@
         />
         <LinkCard
           fa="fab fa-youtube-square"
-          href="https://www.youtube.com/channel/UCUfMLuCKG9XcHGjdqeMTcXw/about"
+          href="https://www.youtube.com/channel/UCc0dsf3mXT45amTJbyvdI6w"
           hrefInfo="Some random streaming"
         />
         <LinkCard
