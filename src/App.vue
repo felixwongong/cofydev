@@ -17,12 +17,15 @@
         <transition
           enter-active-class="animate__animated animate__fadeInUp animate__fast"
           leave-active-class="animate__animated animate__fadeOutDown animate__fast"
+          name="fade"
           mode="out-in"
+          @ended="logging"
         >
           <component :is="Component" />
         </transition>
       </router-view>
     </div>
+    <Footer />
   </div>
 </template>
 
@@ -36,6 +39,7 @@
 import "animate.css";
 
 import Header from "./components/Header.vue";
+import Footer from "./components/Footer.vue";
 import Hero from "./components/Hero.vue";
 import Divider from "./components/Divider.vue";
 
@@ -45,6 +49,7 @@ export default {
     Header,
     Hero,
     Divider,
+    Footer,
   },
 };
 </script>

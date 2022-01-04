@@ -62,7 +62,12 @@ export default {
   name: "detail",
   data() {
     return {
-      path: ["Work"],
+      path: [
+        {
+          name: "Work",
+          routeName: "work",
+        },
+      ],
       work: null,
       dataReady: false,
     };
@@ -80,7 +85,7 @@ export default {
 
     if (docSnap.exists()) {
       this.work = docSnap.data();
-      this.path.push(this.work.name);
+      this.path.push({ name: this.work.name });
       this.dataReady = true;
     }
   },

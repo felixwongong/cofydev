@@ -1,0 +1,33 @@
+<template>
+  <Container
+    class="flex flex-col space-y-2 items-center py-6 font-rain font-thin"
+  >
+    <div>
+      <router-link
+        :to="{ name: 'home' }"
+        class="font-rain font-bold text-lg antialiased flex flex-row items-center"
+      >
+        <div class="w-8">
+          <img
+            src="@/assets/dist/img/coffee.gif"
+            class="object object-scale-down my-auto"
+          />
+        </div>
+        <h2>Felix Wong</h2>
+      </router-link>
+    </div>
+    <div>All Right Reserved.</div>
+    <div>Created by Felix, Wong Yuen Lam</div>
+  </Container>
+</template>
+
+<script>
+import Container from "@/components/util/Container.vue";
+
+export default {
+  name: "Footer",
+  components: {
+    Container,
+  },
+};
+</script>
