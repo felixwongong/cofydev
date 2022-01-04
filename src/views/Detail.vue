@@ -15,26 +15,37 @@
         class="flex flex-col space-y-2 items-start py-2 px-6 font-rain font-semibold tracking-wider"
       >
         <ul>
-          Tag:
+          <span>Tag:</span>
+          <span class="px-1"></span>
+          <span class="px-1" v-for="(tag, i) in work.tag" :key="i">
+            {{ tag }}
+          </span>
         </ul>
         <ul>
-          Date:
+          <span>Date:</span>
+          <span class="px-1"></span>
+          <span>{{ work.date }}</span>
         </ul>
         <ul>
-          Duration:
+          <span>Devtime:</span>
+          <span class="px-1"></span>
+          <span>{{ work.devtime }}</span>
         </ul>
         <ul>
-          Status:
+          <span>Status:</span>
+          <span class="px-1"></span>
+          <span>{{ work.status }}</span>
         </ul>
         <ul>
-          Stack:
+          <span>Stack:</span>
+          <span class="px-1"></span>
+          <span class="px-1" v-for="(stackEl, i) in work.Stack" :key="i">
+            {{ stackEl }}
+          </span>
         </ul>
       </Card>
       <Card class="my-12 py-4 px-6 font-rain font-semibold tracking-wider">
-        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consequuntur,
-        laborum ab! Nemo perferendis officia, quae omnis dicta cum recusandae
-        incidunt doloribus quibusdam ut excepturi quis, officiis distinctio.
-        Architecto, modi laborum!
+        <h2 v-html="work.longDescription"></h2>
       </Card>
     </Container>
   </div>
@@ -64,7 +75,7 @@ export default {
 
   async mounted() {
     const id = this.$route.params.id;
-    const docRef = doc(db, "work", id);
+    const docRef = doc(db, "works", id);
     const docSnap = await getDoc(docRef);
 
     if (docSnap.exists()) {

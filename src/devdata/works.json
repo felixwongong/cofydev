@@ -1,0 +1,30 @@
+[
+  {
+    "id": "space-invader",
+    "name": "Space Invader",
+    "shortDescription": "Remake of the first game I made in Unity",
+    "longDescription": "My first self-created project. Please feel free to leave a review below, or any (bugs, improvement, feature) that I can update on. <br>I would be glad if anyone of you enjoys this game!<br>Credit:<br>MUSIC:<br>Menu BGM: https://nicolemariet.itch.io/spy-8-bit-16-bit by Nicole Marie T<br>In-game BGM: https://big58.itch.io/8bit-ost-the-saga by BIG58<br>SFX: https://kronbits.itch.io/freesfx by Kronbits<br>GRAPHICS<br>8*8 SPACE SHOOTER ASSET https://gvituri.itch.io/space-shooter by  Gustavo Vituri<br>Pixel Planets https://faktory.itch.io/pixel-planets by FaKtory Games",
+    "imageUrl": "https://img.itch.zone/aW1nLzY2NDE0NDEuanBn/315x250%23c/aeqeSw.jpg",
+    "link": "https://yuenlfelix.itch.io/space-invader",
+    "linkName": "Be a Pilot Now!",
+    "tag": ["Game", "Unity", "2D", "Shooter"],
+    "date": "July, 2021",
+    "devtime": "1 month",
+    "status": "Launched",
+    "Stack": ["Unity", "C#"]
+  },
+  {
+    "id": "growhaos",
+    "name": "GroWhaos",
+    "shortDescription": "Brackeys 2021.2 Game Jam",
+    "longDescription": "As the first GameDev youtuber I watched, I really appreciate his many great and useful content on how to make games, and most importantly, how to have fun during the process. Although Brackeys has already left Youtube for a while, I always hope to join his game jam, to make SOMETHING with the fellow developers.<br>This is the first game jam I participated. Producing a THING in several days is not easy, but the developing process is really fun and I will join more game jam in the future!<br>It is suggested to play in standalone app, playing in web might have laggy issues. ",
+    "imageUrl": "https://img.itch.zone/aW1nLzY4NTgzMTEuanBn/315x250%23c/Oksmoi.jpg",
+    "link": "https://yuenlfelix.itch.io/brackeys-game-jam-growhaos",
+    "linkName": "LET THERE BE CHAOS!",
+    "tag": ["Game", "Unity", "3D", "Top Down"],
+    "date": "Late August, 2021",
+    "devtime": "4 days",
+    "status": "Launched",
+    "Stack": ["Unity", "C#"]
+  }
+]

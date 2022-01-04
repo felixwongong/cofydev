@@ -6,6 +6,7 @@ import {
   getDocs,
   doc,
   getDoc,
+  setDoc,
 } from "firebase/firestore";
 // TODO: Add SDKs for Firebase products that you want to use
 // https://firebase.google.com/docs/web/setup#available-libraries
@@ -24,6 +25,6 @@ const firebaseConfig = {
 initializeApp(firebaseConfig);
 
 const db = getFirestore();
-const workCollection = collection(db, "work");
+const workCollection = collection(db, "works");
 
-export { db, workCollection, getDocs, doc, getDoc };
+export { db, workCollection, getDocs, doc, getDoc, setDoc };
