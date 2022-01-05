@@ -4,7 +4,7 @@
 
     <Container width="max-w-max">
       <Card>
-        <div class="bg-light rounded-2xl">
+        <div class="bg-light dark:bg-darkPrimary rounded-2xl">
           <img :src="work.imageUrl" class="object-contain h-auto rounded-2xl" />
         </div>
       </Card>
@@ -17,7 +17,8 @@
         <ul>
           <span>Tag:</span>
           <span class="px-1"></span>
-          <span class="px-1" v-for="(tag, i) in work.tag" :key="i">
+          <span v-for="(tag, i) in work.tag" :key="i">
+            <span v-if="i > 0">,</span>
             {{ tag }}
           </span>
         </ul>
@@ -39,7 +40,8 @@
         <ul>
           <span>Stack:</span>
           <span class="px-1"></span>
-          <span class="px-1" v-for="(stackEl, i) in work.Stack" :key="i">
+          <span v-for="(stackEl, i) in work.Stack" :key="i">
+            <span v-if="i > 0">,</span>
             {{ stackEl }}
           </span>
         </ul>

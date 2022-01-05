@@ -1,5 +1,7 @@
 <template>
-  <div class="fixed top-0 left-0 w-screen h-16 bg-yellow-100 shadow-lg z-50">
+  <div
+    class="fixed top-0 left-0 w-screen h-16 bg-light dark:bg-darkDark shadow-lg z-50 dark:text-darklight"
+  >
     <nav class="max-w-screen-md h-full mx-auto">
       <div class="h-full flex flex-row justify-between items-center px-8">
         <div>
@@ -25,10 +27,10 @@
             </router-link>
           </li>
           <li class="mx-3 font-rain tracking-wider">
-            <a
-              href="#"
+            <router-link
+              :to="{ name: 'nocontent' }"
               class="py-0.5 border-transparent border-b-2 hover:border-gray-600"
-              >Post</a
+              >Post</router-link
             >
           </li>
         </ul>

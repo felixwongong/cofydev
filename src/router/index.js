@@ -2,6 +2,7 @@ import { createRouter, createWebHistory } from "vue-router";
 import Home from "@/views/Home.vue";
 import Work from "@/views/Work.vue";
 import Detail from "@/views/Detail.vue";
+import NoContent from "@/views/404.vue";
 
 const routes = [
   {
@@ -18,6 +19,12 @@ const routes = [
     name: "detail",
     path: "/work/:id",
     component: Detail,
+  },
+  {
+    //TODO: redirect user to home page after period of time (with progression bar)
+    name: "nocontent",
+    path: "/:catchAll(.*)*",
+    component: NoContent,
   },
 ];
 

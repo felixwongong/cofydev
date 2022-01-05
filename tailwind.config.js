@@ -10,6 +10,13 @@ module.exports = {
         dark: "#303C6C",
         blue: "#D2FDFF",
         deepblue: "#B4DFE5",
+
+        darklight: "#FAFAFA",
+        darkPrimary: "#94949C",
+        darkSecondary: "#767C7C",
+        darkDark: "#2C3036",
+        lightOrange: "#EB8872",
+        orange: "#D84E4B",
       },
       fontFamily: {
         rain: ["rain"],

@@ -19,7 +19,6 @@
           leave-active-class="animate__animated animate__fadeOutDown animate__fast"
           name="fade"
           mode="out-in"
-          @ended="logging"
         >
           <component :is="Component" />
         </transition>

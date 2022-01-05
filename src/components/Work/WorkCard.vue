@@ -11,9 +11,11 @@
             {{ description }}
           </p>
         </div>
-        <a :href="workLink" class="btn bg-secondary text-sm z-40">{{
-          workLinkName
-        }}</a>
+        <a
+          :href="workLink"
+          class="btn bg-secondary text-sm z-40 hover:shadow-md transition-shadow"
+          >{{ workLinkName }}</a
+        >
       </div>
       <router-link
         :to="{ name: 'detail', params: { id: id } }"
