@@ -1,5 +1,5 @@
 <template>
-  <section class="mx-auto my-14" :class="width">
+  <section class="mx-auto my-14 max-w-xs" :class="width">
     <slot />
   </section>
 </template>
@@ -9,7 +9,7 @@ export default {
   name: "Container",
   props: {
     width: {
-      default: "max-w-screen-md",
+      default: "md:max-w-screen-md",
     },
   },
 };

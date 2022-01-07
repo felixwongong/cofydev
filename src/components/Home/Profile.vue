@@ -1,9 +1,8 @@
 <template>
-  <Container>
-    <section class="flex flex-col-reverse md:flex-row justify-between">
-      <Content />
-      <Card />
-    </section>
+  <Container class="flex flex-col-reverse md:flex-row justify-between">
+    <Content />
+    <div class="py-6 md:hidden"></div>
+    <Card />
   </Container>
 </template>
 
