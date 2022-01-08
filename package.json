@@ -13,6 +13,7 @@
     "asciimoticon-core": "^1.2.2",
     "autoprefixer": "^9",
     "core-js": "^3.6.5",
+    "dotenv": "^10.0.0",
     "emoticon": "^4.0.1",
     "firebase": "^9.6.1",
     "postcss": "^7",

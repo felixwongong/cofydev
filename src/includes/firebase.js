@@ -13,12 +13,12 @@ import {
 
 // Your web app's Firebase configuration
 const firebaseConfig = {
-  apiKey: "AIzaSyA03TCIPLnaqNoqDBcb9Ty_DNbLzoZ7UvQ",
-  authDomain: "portfolio-web-8cd9b.firebaseapp.com",
-  projectId: "portfolio-web-8cd9b",
-  storageBucket: "portfolio-web-8cd9b.appspot.com",
-  messagingSenderId: "227763880066",
-  appId: "1:227763880066:web:aa4c48b9cff8b6e863349b",
+  apiKey: process.env.VUE_APP_API_KEY,
+  authDomain: process.env.VUE_APP_AUTH_DOMAIN,
+  projectId: process.env.VUE_APP_PROJECT_ID,
+  storageBucket: process.env.VUE_APP_STORAGE_BUCKET,
+  messagingSenderId: process.env.VUE_APP_SENDER_ID,
+  appId: process.env.VUE_APP_APP_ID,
 };
 
 // Initialize Firebase
