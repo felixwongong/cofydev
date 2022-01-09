@@ -16,7 +16,7 @@
         <h2>Felix Wong</h2>
       </router-link>
     </div>
-    <div>All Right Reserved.</div>
+    <router-link :to="{ name: 'credit' }">Credit</router-link>
     <div>Created by Felix, Wong Yuen Lam</div>
   </Container>
 </template>

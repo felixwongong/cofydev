@@ -3,6 +3,7 @@ import Home from "@/views/Home.vue";
 import Work from "@/views/Work.vue";
 import Detail from "@/views/Detail.vue";
 import NoContent from "@/views/404.vue";
+import Credit from "@/views/Credit.vue";
 
 const routes = [
   {
@@ -19,6 +20,11 @@ const routes = [
     name: "detail",
     path: "/work/:id",
     component: Detail,
+  },
+  {
+    name: "credit",
+    path: "/credits",
+    component: Credit,
   },
   {
     //TODO: redirect user to home page after period of time (with progression bar)
