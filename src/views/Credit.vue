@@ -17,6 +17,10 @@
     <div>
       <a href="https://icons8.com/icon/n8viW0X2OYKw/sun">Sun icon by Icons8</a>
     </div>
+    <div>
+      <a target="_blank" href="https://icons8.com/icon/IwHmhNaUbPvz/fog">Fog</a>
+      icon by <a target="_blank" href="https://icons8.com">Icons8</a>
+    </div>
   </TSection>
 </template>
 

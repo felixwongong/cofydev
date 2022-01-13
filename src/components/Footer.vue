@@ -5,7 +5,7 @@
     <div>
       <router-link
         :to="{ name: 'home' }"
-        class="text-primary-dark font-bold text-lg antialiased flex flex-row items-center"
+        class="text-primary-dark font-bold text-lg antialiased flex flex-row items-center dark:bg-darkSecondary px-2 rounded-md"
       >
         <div class="w-8">
           <img

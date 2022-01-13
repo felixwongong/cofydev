@@ -38,6 +38,14 @@
           <img
             src="@/assets/dist/img/sun.gif"
             class="object object-scale-down dark:bg-secondary rounded p-1"
+            @click="toggleNightMode"
+            v-if="!isNightMode"
+          />
+          <img
+            src="@/assets/dist/img/moon.gif"
+            class="object object-scale-down dark:bg-secondary rounded p-1"
+            @click="toggleNightMode"
+            v-else
           />
         </div>
       </div>
@@ -48,5 +56,16 @@
 <script>
 export default {
   name: "Header",
+  data() {
+    return {
+      isNightMode: false,
+    };
+  },
+  methods: {
+    toggleNightMode() {
+      this.isNightMode = !this.isNightMode;
+      document.querySelector("html").classList.toggle("dark");
+    },
+  },
 };
 </script>
