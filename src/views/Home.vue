@@ -4,7 +4,7 @@
     <Profile />
     <TSection
       title="About Me"
-      class="font-rain tracking-wide font-semibold text-lg"
+      class="text-primary-dark tracking-wide font-semibold text-lg"
     >
       <p>
         A student boi who loves developing anything like games, website, artwork
@@ -21,7 +21,7 @@
       </p>
     </TSection>
     <TSection title="Timeline">
-      <p class="font-rain tracking-wide font-semibold">
+      <p class="text-primary-dark tracking-wide font-semibold">
         The craftman is busy celebrating the New Year. Please wait a moment
       </p>
     </TSection>

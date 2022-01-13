@@ -1,10 +1,11 @@
 <template>
   <div
-    class="max-w-screen-sm mx-auto border-t-2 border-b-2 border-dark border-dashed py-2"
+    class="max-w-screen-sm mx-auto border-t-2 border-b-2 border-dark dark:border-orange border-dashed py-2"
   >
     <ul class="mx-auto max-w-md flex flex-row justify-center">
       <li class="text-3xl w-8" v-for="prop in emoticonProps" :key="prop.id">
         <h2
+          class="dark:text-yellow-300"
           :class="{ anim_popOut: prop.hasPopped }"
           v-on:animationend="removeClass(prop)"
         >

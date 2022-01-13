@@ -3,7 +3,7 @@
     <Tile />
     <TSection
       title="Works"
-      class="font-rain tracking-wide font-semibold text-lg"
+      class="text-primary-dark tracking-wide font-semibold text-lg"
     >
       <Container
         width="max-w-screen-sm"

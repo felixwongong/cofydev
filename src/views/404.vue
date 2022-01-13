@@ -1,6 +1,6 @@
 <template>
   <TSection title="No Content">
-    <h2 class="font-rain">This page has no content yet</h2>
+    <h2 class="text-primary-dark">This page has no content yet</h2>
   </TSection>
 </template>
 

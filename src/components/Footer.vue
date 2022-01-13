@@ -1,11 +1,11 @@
 <template>
   <Container
-    class="flex flex-col space-y-2 items-center py-6 font-rain font-thin"
+    class="flex flex-col space-y-2 items-center py-6 text-primary-dark font-thin"
   >
     <div>
       <router-link
         :to="{ name: 'home' }"
-        class="font-rain font-bold text-lg antialiased flex flex-row items-center"
+        class="text-primary-dark font-bold text-lg antialiased flex flex-row items-center"
       >
         <div class="w-8">
           <img

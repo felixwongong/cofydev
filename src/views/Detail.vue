@@ -12,7 +12,7 @@
 
     <Container width="md:max-w-screen-sm">
       <Card
-        class="flex flex-col space-y-2 items-start py-2 px-6 font-rain font-semibold tracking-wider"
+        class="flex flex-col space-y-2 items-start py-2 px-6 text-primary-dark font-semibold tracking-wider"
       >
         <ul>
           <span>Tag:</span>
@@ -46,7 +46,9 @@
           </span>
         </ul>
       </Card>
-      <Card class="my-12 py-4 px-6 font-rain font-semibold tracking-wider">
+      <Card
+        class="my-12 py-4 px-6 text-primary-dark font-semibold tracking-wider"
+      >
         <h2 v-html="work.longDescription"></h2>
       </Card>
     </Container>

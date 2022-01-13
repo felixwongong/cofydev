@@ -1,6 +1,6 @@
 <template>
   <Card
-    class="w-max my-2 py-2 px-5 font-rain tracking-wide font-semibold link-card"
+    class="w-max my-2 py-2 px-5 text-primary-dark tracking-wide font-semibold link-card"
     id=""
     @mouseover="cardHover = true"
     @mouseleave="cardHover = false"

@@ -28,6 +28,9 @@ module.exports = {
         center: true,
         padding: "0 3.5rem",
       },
+      backgroundImage: {
+        coffee: "url('/dist/img/coffee.gif')",
+      },
     },
   },
   variants: {},

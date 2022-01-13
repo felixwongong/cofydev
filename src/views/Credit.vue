@@ -1,5 +1,5 @@
 <template>
-  <TSection title="Credits" class="font-rain">
+  <TSection title="Credits" class="text-primary-dark">
     <div>
       <a target="_blank" href="https://icons8.com/icon/kJAO58-bW6HB/love-arrow"
         >Love Arrow</a

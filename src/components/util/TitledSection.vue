@@ -2,7 +2,7 @@
   <Container>
     <section>
       <div class="mx-auto my-8 md:my-4 md:block flex justify-center">
-        <h2 class="title text-dark">{{ title }}</h2>
+        <h2 class="title">{{ title }}</h2>
       </div>
       <slot />
     </section>
