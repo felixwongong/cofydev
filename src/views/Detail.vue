@@ -49,7 +49,7 @@
       <Card
         class="my-12 py-4 px-6 text-primary-dark font-semibold tracking-wider"
       >
-        <h2 v-html="work.longDescription"></h2>
+        <Markdown :content="work.longDescription" />
       </Card>
     </Container>
   </div>
@@ -61,6 +61,7 @@ import { doc, getDoc, db } from "@/includes/firebase.js";
 import Breadcrumb from "@/components/util/Breadcrumb.vue";
 import Card from "@/components/util/Card.vue";
 import Container from "@/components/util/Container.vue";
+import Markdown from "@/components/util/Markdown.vue";
 
 export default {
   name: "detail",
@@ -80,6 +81,7 @@ export default {
     Breadcrumb,
     Card,
     Container,
+    Markdown,
   },
 
   async mounted() {
