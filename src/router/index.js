@@ -27,6 +27,11 @@ const routes = [
     component: Credit,
   },
   {
+    name: "static",
+    path: "/public/:catchAll(.*)*",
+    redirect: "@/public",
+  },
+  {
     //TODO: redirect user to home page after period of time (with progression bar)
     name: "nocontent",
     path: "/:catchAll(.*)*",
