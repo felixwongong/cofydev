@@ -5,7 +5,7 @@
     <Container width="md:max-w-max">
       <Card>
         <div class="bg-light dark:bg-darkPrimary rounded-2xl">
-          <img :src="work.imageUrl" class="object-contain h-auto rounded-2xl" />
+          <img :src="work.image" class="object-contain h-auto rounded-2xl" />
         </div>
       </Card>
     </Container>
@@ -25,7 +25,7 @@
         <ul>
           <span>Date:</span>
           <span class="px-1"></span>
-          <span>{{ work.date }}</span>
+          <span>{{ work.Date }}</span>
         </ul>
         <ul>
           <span>Devtime:</span>
@@ -56,8 +56,6 @@
 </template>
 
 <script>
-import { doc, getDoc, db } from "@/includes/firebase.js";
-
 import Breadcrumb from "@/components/util/Breadcrumb.vue";
 import Card from "@/components/util/Card.vue";
 import Container from "@/components/util/Container.vue";
@@ -86,14 +84,14 @@ export default {
 
   async mounted() {
     const id = this.$route.params.id;
-    const docRef = doc(db, "works", id);
-    const docSnap = await getDoc(docRef);
+    const url =
+      process.env.BE_HOST || "https://portfolio-web-cms.herokuapp.com";
 
-    if (docSnap.exists()) {
-      this.work = docSnap.data();
-      this.path.push({ name: this.work.name });
-      this.dataReady = true;
-    }
+    const works = await fetch(`${url}/api/works/${id}`);
+    const worksJSON = await works.json();
+    this.work = await worksJSON.data;
+    this.work.image = `${url}${this.work.image}`;
+    this.dataReady = true;
   },
 };
 </script>

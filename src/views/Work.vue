@@ -13,7 +13,7 @@
           v-for="(work, i) in works"
           :key="i"
           :id="work.id"
-          :imageUrl="work.imageUrl"
+          :imageUrl="work.image"
           :workName="work.name"
           :description="work.shortDescription"
           :workLinkName="work.linkName"
@@ -25,8 +25,6 @@
 </template>
 
 <script>
-import { workCollection, getDocs } from "@/includes/firebase.js";
-
 import Tile from "@/components/Tile.vue";
 import TSection from "@/components/util/TitledSection.vue";
 import Card from "@/components/Work/WorkCard.vue";
@@ -49,10 +47,17 @@ export default {
   },
 
   async mounted() {
-    const workDoc = await getDocs(workCollection);
-    workDoc.forEach((doc) => {
-      this.works.push({ ...doc.data(), id: doc.id });
+    const url =
+      process.env.BE_HOST || "https://portfolio-web-cms.herokuapp.com";
+
+    const works = await fetch(`${url}/api/works`);
+    const worksJSON = await works.json();
+    const worksData = await worksJSON.returnData;
+    worksData.forEach((work) => {
+      work.image = `${url}${work.image}`;
+      this.works.push(work);
     });
+
     this.dataReady = true;
   },
 };
