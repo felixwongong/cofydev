@@ -50,5 +50,9 @@ export default {
     Divider,
     Footer,
   },
+
+  mounted() {
+    fetch(`https://portfolio-web-cms.herokuapp.com/api/works`);
+  }
 };
 </script>
