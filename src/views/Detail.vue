@@ -90,7 +90,6 @@ export default {
     const works = await fetch(`${url}/api/works/${id}`);
     const worksJSON = await works.json();
     this.work = await worksJSON.data;
-    this.work.image = `${url}${this.work.image}`;
     this.dataReady = true;
   },
 };
