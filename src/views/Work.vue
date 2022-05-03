@@ -54,7 +54,6 @@ export default {
     const worksJSON = await works.json();
     const worksData = await worksJSON.returnData;
     worksData.forEach((work) => {
-      work.image = `${url}${work.image}`;
       this.works.push(work);
     });
 
