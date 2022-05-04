@@ -4,6 +4,7 @@ import Work from "@/views/Work.vue";
 import Detail from "@/views/Detail.vue";
 import NoContent from "@/views/404.vue";
 import Credit from "@/views/Credit.vue";
+import CV from "@/views/CV.vue";
 
 const routes = [
   {
@@ -26,6 +27,29 @@ const routes = [
     path: "/credits",
     component: Credit,
   },
+  {
+    name: "web cv",
+    path: "/web-cv",
+    component: CV,
+    props: {
+      link: "https://docs.google.com/document/d/e/2PACX-1vQ327WXI340oLOa4wKUSUd6Azj_3S1vUL-Xk5w_ytYcAZSiZkCUMsdXradjIsSlnQ/pub?embedded=true",
+    },
+    meta: {
+      noHero: true,
+    },
+  },
+  {
+    name: "game cv",
+    path: "/game-cv",
+    component: CV,
+    props: {
+      link: "https://docs.google.com/document/d/e/2PACX-1vR6Kl1l-x-7qBQmrEPntAl_ymW90cjCLMfUuF5qEB73ur4LY0AbeCmnZ1fbq8xgaQ/pub?embedded=true",
+    },
+    meta: {
+      noHero: true,
+    },
+  },
+
   {
     //TODO: redirect user to home page after period of time (with progression bar)
     name: "nocontent",

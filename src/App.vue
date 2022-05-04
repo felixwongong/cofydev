@@ -1,10 +1,11 @@
 <template>
   <div>
     <Header />
-
+    <div class="w-screen h-16"></div>
     <div class="main">
       <router-view v-slot="{ Component, route }" class="my-16">
         <transition
+          v-if="!route.meta.noHero"
           enter-active-class="animate__animated animate__fadeInDown"
           leave-active-class="animate__animated animate__fadeOutUp"
           mode="out-in"
@@ -50,9 +51,5 @@ export default {
     Divider,
     Footer,
   },
-
-  mounted() {
-    fetch(`https://portfolio-web-cms.herokuapp.com/api/works`);
-  }
 };
 </script>
