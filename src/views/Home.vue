@@ -1,6 +1,6 @@
 <template>
   <section>
-    <Tile />
+    <Tile content="I make games, and cute web🕸️ (❁´◡`❁)" />
     <Profile />
     <TSection
       title="About Me"
@@ -25,30 +25,7 @@
         The craftman is busy celebrating the New Year. Please wait a moment
       </p>
     </TSection>
-    <TSection title="Portal">
-      <div class="flex flex-row flex-wrap">
-        <LinkCard
-          fa="fab fa-github"
-          href="https://github.com/felixwongong"
-          hrefInfo="All the project repo"
-        />
-        <LinkCard
-          fa="fab fa-instagram"
-          href="https://www.instagram.com/cofylife/"
-          hrefInfo="Come and check my post!"
-        />
-        <LinkCard
-          fa="fab fa-youtube-square"
-          href="https://www.youtube.com/channel/UCc0dsf3mXT45amTJbyvdI6w"
-          hrefInfo="Some random streaming"
-        />
-        <LinkCard
-          fa="fab fa-itch-io"
-          href="https://yuenlfelix.itch.io/"
-          hrefInfo="My Games"
-        />
-      </div>
-    </TSection>
+    <Portal />
   </section>
 </template>
 
@@ -56,15 +33,15 @@
 import Tile from "@/components/Tile.vue";
 import Profile from "@/components/Home/Profile.vue";
 import TSection from "@/components/util/TitledSection.vue";
-import LinkCard from "@/components/util/LinkCard.vue";
+import Portal from "@/views/Portal";
 
 export default {
   name: "Home",
   components: {
+    Portal,
     Profile,
     Tile,
     TSection,
-    LinkCard,
   },
 };
 </script>

@@ -18,7 +18,7 @@
         >
       </div>
       <router-link
-        :to="{ name: 'detail', params: { id: id } }"
+        :to="{ name: 'detail', params: { id: slug } }"
         class="absolute top-0 left-0 w-full h-full rounded-2xl cursor-key"
       ></router-link>
     </div>
@@ -54,6 +54,9 @@ export default {
       default: "Check it now!",
     },
     workLink: {
+      require: true,
+    },
+    slug: {
       require: true,
     },
   },

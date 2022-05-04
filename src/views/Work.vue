@@ -18,6 +18,7 @@
           :description="work.shortDescription"
           :workLinkName="work.linkName"
           :workLink="work.link"
+          :slug="work.slug"
         />
       </Container>
     </TSection>

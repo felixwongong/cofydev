@@ -56,6 +56,8 @@
 </template>
 
 <script>
+import qs from "qs";
+
 import Breadcrumb from "@/components/util/Breadcrumb.vue";
 import Card from "@/components/util/Card.vue";
 import Container from "@/components/util/Container.vue";
@@ -87,9 +89,26 @@ export default {
     const url =
       process.env.BE_HOST || "https://portfolio-web-cms.herokuapp.com";
 
-    const works = await fetch(`${url}/api/works/${id}`);
+    const query = qs.stringify(
+      {
+        filters: {
+          slug: {
+            $eq: id,
+          },
+        },
+      },
+      {
+        encodeValuesOnly: true,
+      }
+    );
+
+    const works = await fetch(`${url}/api/works?${query}`);
     const worksJSON = await works.json();
-    this.work = await worksJSON.data;
+    this.work = await worksJSON.returnData[0];
+
+    this.path.push({
+      name: this.work.name,
+    });
     this.dataReady = true;
   },
 };
