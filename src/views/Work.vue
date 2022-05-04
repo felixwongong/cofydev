@@ -1,6 +1,6 @@
 <template>
   <section v-if="dataReady">
-    <Tile />
+    <Tile content="Showcase🔥🔥" />
     <TSection
       title="Works"
       class="text-primary-dark tracking-wide font-semibold text-lg"
