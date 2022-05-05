@@ -19,14 +19,14 @@
           </router-link>
         </div>
         <ul class="flex flex-row justify-evenly items-center">
-          <li class="mx-3 text-primary-dark tracking-wider">
+          <li class="mx3 text-primary-dark tracking-wider">
             <router-link
               :to="{ name: 'work' }"
               class="py-0.5 border-transparent border-b-2 hover:border-gray-600"
               >Work
             </router-link>
           </li>
-          <li class="mx-3 text-primary-dark tracking-wider">
+          <li class="mx3 text-primary-dark tracking-wider">
             <router-link
               :to="{ name: 'nocontent' }"
               class="py-0.5 border-transparent border-b-2 hover:border-gray-600"

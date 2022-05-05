@@ -9316,6 +9316,11 @@ watchpack@^1.7.4:
     chokidar "^3.4.1"
     watchpack-chokidar2 "^2.0.1"
 
+wave-ui@^2.37.1:
+  version "2.37.1"
+  resolved "https://registry.npmmirror.com/wave-ui/-/wave-ui-2.37.1.tgz#3f8c7932cf4700533efacbbe7fc41e2c44cc745a"
+  integrity sha512-hsLLPoLwn9enf7njHoz6fQ1PzkEDYWkL8tjD07S+wl/IjlB1DVbq/Jewb0mWsR5HWZHU/q0aOpuSHrmLCzkPqQ==
+
 wbuf@^1.1.0, wbuf@^1.7.3:
   version "1.7.3"
   resolved "https://registry.nlark.com/wbuf/download/wbuf-1.7.3.tgz"

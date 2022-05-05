@@ -1,7 +1,7 @@
 <template>
   <Container class="flex flex-col-reverse md:flex-row justify-between">
     <Content />
-    <div class="py-6 md:hidden"></div>
+    <div class="py6 md:hidden"></div>
     <Card />
   </Container>
 </template>

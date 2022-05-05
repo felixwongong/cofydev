@@ -1,5 +1,5 @@
 <template>
-  <section class="mx-auto my-14 max-w-xs" :class="width">
+  <section class="mxa my12 max-w-sm" :class="width">
     <slot />
   </section>
 </template>

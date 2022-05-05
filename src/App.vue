@@ -1,31 +1,34 @@
 <template>
-  <div>
-    <Header />
-
-    <div class="main">
-      <router-view v-slot="{ Component, route }" class="my-16">
-        <transition
-          enter-active-class="animate__animated animate__fadeInDown"
-          leave-active-class="animate__animated animate__fadeOutUp"
-          mode="out-in"
-        >
-          <div v-show="!route.meta.noHero">
-            <Hero />
-            <Divider />
-          </div>
-        </transition>
-        <transition
-          enter-active-class="animate__animated animate__fadeInUp animate__fast"
-          leave-active-class="animate__animated animate__fadeOutDown animate__fast"
-          name="fade"
-          mode="out-in"
-        >
-          <component :is="Component" />
-        </transition>
-      </router-view>
+  <w-app>
+    <div>
+      <Header />
+      <div class="w-screen h-16"></div>
+      <div class="main">
+        <router-view v-slot="{ Component, route }" class="my-16">
+          <transition
+            v-if="!route.meta.noHero"
+            enter-active-class="animate__animated animate__fadeInDown"
+            leave-active-class="animate__animated animate__fadeOutUp"
+            mode="out-in"
+          >
+            <div v-show="!route.meta.noHero">
+              <Hero />
+              <Divider />
+            </div>
+          </transition>
+          <transition
+            enter-active-class="animate__animated animate__fadeInUp animate__fast"
+            leave-active-class="animate__animated animate__fadeOutDown animate__fast"
+            name="fade"
+            mode="out-in"
+          >
+            <component :is="Component" />
+          </transition>
+        </router-view>
+      </div>
+      <Footer />
     </div>
-    <Footer />
-  </div>
+  </w-app>
 </template>
 
 <style>

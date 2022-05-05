@@ -1,11 +1,11 @@
 <template>
   <Container>
-    <section>
-      <div class="mx-auto my-8 md:my-4 md:block flex justify-center">
+    <div>
+      <w-flex class="smd-justify-center mxa my8 mdd-my4 smd-block">
         <h2 class="title">{{ title }}</h2>
-      </div>
+      </w-flex>
       <slot />
-    </section>
+    </div>
   </Container>
 </template>
 

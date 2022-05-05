@@ -52,6 +52,17 @@
         <h2 v-html="work.longDescription"></h2>
       </Card>
     </Container>
+    <Container>
+      <iframe
+        frameborder="0"
+        src="https://itch.io/embed/1495963"
+        width="552"
+        height="167"
+        ><a href="https://yuenlfelix.itch.io/cg-runner"
+          >cg_runner by yuenLFelix</a
+        ></iframe
+      >
+    </Container>
   </div>
 </template>
 
