@@ -21,7 +21,7 @@ export default {
   components: { Link, Container, Tile },
   beforeCreate() {
     const accessCode = process.env.LINKTREE_ACCESS;
-
+    console.log(process.env.LINKTREE_ACCESS);
     const { access } = this.$route.query;
     if (!access || access != accessCode) {
       const inputAccess = prompt("What is the access code?");
