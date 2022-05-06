@@ -20,7 +20,7 @@ export default {
   name: "Linktree",
   components: { Link, Container, Tile },
   beforeCreate() {
-    const accessCode = process.env.LINKTREE_ACCESS;
+    const accessCode = process.env.VUE_APP_LINKTREE_ACCESS;
     console.log(process.env);
     const { access } = this.$route.query;
     if (!access || access != accessCode) {
