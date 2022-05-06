@@ -11,7 +11,7 @@
           mode="out-in"
         >
           <div v-show="!route.meta.noHero">
-            <Hero />
+            <Hero v-show="!route.meta.noHeader" />
             <Divider />
           </div>
         </transition>

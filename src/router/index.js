@@ -5,6 +5,7 @@ import Detail from "@/views/Detail.vue";
 import NoContent from "@/views/404.vue";
 import Credit from "@/views/Credit.vue";
 import CV from "@/views/CV.vue";
+import Linktree from "@/views/Linktree.vue";
 
 const routes = [
   {
@@ -21,6 +22,14 @@ const routes = [
     name: "detail",
     path: "/work/:id",
     component: Detail,
+  },
+  {
+    name: "linktree",
+    path: "/linktree",
+    component: Linktree,
+    meta: {
+      noHero: true,
+    },
   },
   {
     name: "credit",
