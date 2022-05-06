@@ -21,11 +21,11 @@ export default {
   components: { Link, Container, Tile },
   beforeCreate() {
     const accessCode = process.env.LINKTREE_ACCESS;
-    console.log(process.env.LINKTREE_ACCESS);
+    console.log(process.env);
     const { access } = this.$route.query;
     if (!access || access != accessCode) {
       const inputAccess = prompt("What is the access code?");
-      if (inputAccess != accessCode) {
+      if (!inputAccess || inputAccess != accessCode) {
         alert("Sad but you are not allowed to read this.");
         window.location = "/";
       }
