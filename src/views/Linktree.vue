@@ -27,7 +27,7 @@ export default {
       const inputAccess = prompt("What is the access code?");
       if (!inputAccess || inputAccess != accessCode) {
         alert("Sad but you are not allowed to read this.");
-        //window.location = "/";
+        window.location = "/";
       }
     }
   },
