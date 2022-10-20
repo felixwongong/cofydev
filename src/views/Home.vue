@@ -20,8 +20,8 @@
         once in a while
       </p>
     </TSection>
-    <TSection title="Timeline">
-      <Timeline />
+    <TSection title="Timeline" class="h-full">
+      <Timeline class="my-10" />
     </TSection>
     <Portal />
   </section>
@@ -32,7 +32,7 @@ import Tile from "@/components/Tile.vue";
 import Profile from "@/components/Home/Profile.vue";
 import TSection from "@/components/util/TitledSection.vue";
 import Portal from "@/views/Portal";
-import Timeline from "@/components/Timeline.vue";
+import Timeline from "@/components/Timeline/Timeline.vue";
 
 export default {
   name: "Home",
