@@ -1,6 +1,6 @@
 <template>
   <div>
-    <Tile content="Links 🔗" />
+    <Tile content="Resources 🧱" />
     <Container width="md:max-w-screen-sm md:px-10">
       <ul class="w-full flex flex-col space-y-5">
         <Link linkName="Web CV" webLink="/web-cv" downloadLink="webcv.pdf" />
@@ -19,16 +19,5 @@ import Link from "@/components/Link.vue";
 export default {
   name: "Linktree",
   components: { Link, Container, Tile },
-  beforeCreate() {
-    const accessCode = process.env.VUE_APP_LINKTREE_ACCESS;
-    const { access } = this.$route.query;
-    if (!access || access != accessCode) {
-      const inputAccess = prompt("What is the access code?");
-      if (!inputAccess || inputAccess != accessCode) {
-        alert("Sad but you are not allowed to read this.");
-        window.location = "/";
-      }
-    }
-  },
 };
 </script>

@@ -22,12 +22,12 @@
         hrefInfo="My Games"
       />
       <LinkCard
-        fa="fab fa-itch-io"
+        fa="fas fa-laptop-code"
         href="https://cofy.dev/web-cv"
         hrefInfo="Web Development CV"
       />
       <LinkCard
-        fa="fab fa-itch-io"
+        fa="fas fa-gavel"
         href="https://cofy.dev/game-cv"
         hrefInfo="Game Development CV"
       />

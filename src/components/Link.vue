@@ -1,8 +1,11 @@
 <template>
   <div class="font-rain flex justify-between">
-    <p class="inline-block">{{ linkName }}</p>
+    <p class="inline-block dark:text-gray-300">{{ linkName }}</p>
     <span class="flex justify-start space-x-4">
-      <a v-if="webLink" class="text-purple-800 font-bold" :href="webLink"
+      <a
+        v-if="webLink"
+        class="text-purple-800 dark:text-purple-400 font-bold"
+        :href="webLink"
         >View in Web</a
       >
       <a
