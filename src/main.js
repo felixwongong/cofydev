@@ -4,6 +4,8 @@ import router from "./router";
 import store from "./store";
 
 import "./assets/tailwind.css";
+import "./styles/font-awesome";
+import { FontAwesomeIcon } from "@fortawesome/vue-fontawesome";
 
 let app;
 
@@ -12,6 +14,6 @@ if (!app) {
 
   app.use(store);
   app.use(router);
-
+  app.component("font-awesome-icon", FontAwesomeIcon);
   app.mount("#app");
 }

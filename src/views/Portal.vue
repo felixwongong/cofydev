@@ -12,7 +12,7 @@
         hrefInfo="Come and check my post!"
       />
       <LinkCard
-        fa="fab fa-youtube-square"
+        fa="fab fa-youtube"
         href="https://www.youtube.com/channel/UCc0dsf3mXT45amTJbyvdI6w"
         hrefInfo="Some random streaming"
       />
@@ -22,12 +22,12 @@
         hrefInfo="My Games"
       />
       <LinkCard
-        fa="fas fa-laptop-code"
+        fa="fab fa-node-js"
         href="https://cofy.dev/web-cv"
         hrefInfo="Web Development CV"
       />
       <LinkCard
-        fa="fas fa-gavel"
+        fa="fa-regular fa-hand-lizard"
         href="https://cofy.dev/game-cv"
         hrefInfo="Game Development CV"
       />

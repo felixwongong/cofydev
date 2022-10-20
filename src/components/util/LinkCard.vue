@@ -5,8 +5,8 @@
     @mouseover="cardHover = true"
     @mouseleave="cardHover = false"
   >
-    <div :class="{ anim_spin: cardHover }">
-      <i class="fa-2x" :class="fa"></i>
+    <div>
+      <font-awesome-icon size="2x" :icon="fa" :bounce="cardHover" />
     </div>
     <div class="w-7"></div>
     <a :href="href" target="_blank" class="my-auto">{{ hrefInfo }}</a>
