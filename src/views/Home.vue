@@ -21,9 +21,7 @@
       </p>
     </TSection>
     <TSection title="Timeline">
-      <p class="text-primary-dark tracking-wide font-semibold">
-        The craftman is busy celebrating the New Year. Please wait a moment
-      </p>
+      <Timeline />
     </TSection>
     <Portal />
   </section>
@@ -34,6 +32,7 @@ import Tile from "@/components/Tile.vue";
 import Profile from "@/components/Home/Profile.vue";
 import TSection from "@/components/util/TitledSection.vue";
 import Portal from "@/views/Portal";
+import Timeline from "@/components/Timeline.vue";
 
 export default {
   name: "Home",
@@ -42,6 +41,7 @@ export default {
     Profile,
     Tile,
     TSection,
+    Timeline,
   },
 };
 </script>
