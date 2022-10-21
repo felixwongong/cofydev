@@ -4,7 +4,7 @@
   >
     <n-result
       status="500"
-      title="I Have No Time Error"
+      title="I Need More Time Error"
       description="This will be replaced by my model in the (not near) future"
       class="text-primary-dark"
     >
