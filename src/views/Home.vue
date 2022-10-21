@@ -20,7 +20,7 @@
         once in a while
       </p>
     </TSection>
-    <TSection title="Timeline" class="h-full">
+    <TSection title="Journey" class="h-full">
       <Timeline class="my-10" />
     </TSection>
     <Portal />

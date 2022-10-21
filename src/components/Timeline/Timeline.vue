@@ -1,8 +1,14 @@
 <template>
   <div style="overflow: auto" class="no-scroll">
     <nTimeline horizontal>
-      <TimelineItem />
-      <TimelineItem />
+      <TimelineItem
+        v-for="item in items"
+        :title="item.title"
+        :content="item.content"
+        :time="item.time"
+        :icon="item.icon"
+        :key="item.title"
+      />
     </nTimeline>
   </div>
 </template>
@@ -13,6 +19,24 @@ import TimelineItem from "./TimelineItem";
 
 export default {
   components: { TimelineItem, nTimeline },
+  data() {
+    return {
+      items: [
+        {
+          title: "SCI Student",
+          content: "HKBU",
+          time: "2019/09/01",
+          icon: "fa-building",
+        },
+        {
+          title: "Made my first game",
+          content: "Processing",
+          time: "2019 Semester 1",
+          icon: "fa-dragon",
+        },
+      ],
+    };
+  },
 };
 </script>
 

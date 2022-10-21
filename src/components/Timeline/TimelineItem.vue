@@ -1,13 +1,17 @@
 <template>
   <nTimelineItem
-    type="success"
-    title="Success"
-    content="Success content"
-    time="2018-04-03 20:46"
+    :title="title ? title : 'Default Title'"
+    :content="content ? content : 'Default Content'"
+    :time="
+      new Date(time).toLocaleDateString()
+        ? new Date(time).toLocaleDateString()
+        : time
+    "
+    class="font-rain"
   >
     <template #icon>
       <n-icon>
-        <font-awesome-icon icon="fab fa-instagram" />
+        <font-awesome-icon :icon="'fa-solid ' + icon" size="lg" />
       </n-icon>
     </template>
   </nTimelineItem>
@@ -15,5 +19,6 @@
 <script>
 export default {
   name: "TimelineItem",
+  props: ["icon"],
 };
 </script>
