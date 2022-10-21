@@ -19,6 +19,6 @@
 <script>
 export default {
   name: "TimelineItem",
-  props: ["icon"],
+  props: ["icon", "title", "time", "content"],
 };
 </script>

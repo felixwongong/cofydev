@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="overflow-hidden">
     <Header />
     <div class="w-screen h-16"></div>
     <div class="main">
