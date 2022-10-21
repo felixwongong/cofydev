@@ -1,5 +1,5 @@
 <template>
-  <div style="overflow: auto" class="scroll">
+  <div style="overflow: auto" class="scroll text-primary-dark">
     <nTimeline horizontal class="pb-7">
       <TimelineItem
         v-for="item in items"
