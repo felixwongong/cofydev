@@ -2,10 +2,7 @@
   <section>
     <Tile content="I make games, and cute web🕸️ (❁´◡`❁)" />
     <Profile />
-    <TSection
-      title="About Me"
-      class="text-primary-dark tracking-wide font-semibold text-lg"
-    >
+    <TSection title="About Me" class="text-primary-dark tracking-wide text-lg">
       <p>A student who loves developing games, website, small artworks</p>
       <p>
         A coder whose life sticks with programming, building blocks, and solving

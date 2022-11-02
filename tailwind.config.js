@@ -11,11 +11,11 @@ module.exports = {
         blue: "#D2FDFF",
         deepblue: "#B4DFE5",
 
-        darklight: "#FAFAFA",
-        darkPrimary: "#94949C",
-        darkSecondary: "#767C7C",
-        darkDark: "#2C3036",
-        lightOrange: "#EB8872",
+        darklight: "#EEEEEE",
+        darkPrimary: "#393E46",
+        darkSecondary: "#393E46",
+        darkDark: "#222831",
+        lightOrange: "#FD7014",
         orange: "#D84E4B",
       },
       fontFamily: {

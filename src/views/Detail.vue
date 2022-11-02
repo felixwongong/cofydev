@@ -12,7 +12,7 @@
 
     <Container width="md:max-w-screen-sm">
       <Card
-        class="flex flex-col space-y-2 items-start py-2 px-6 text-primary-dark font-semibold tracking-wider"
+        class="flex flex-col space-y-2 items-start py-2 px-6 text-primary-dark tracking-wider"
       >
         <ul>
           <span>Tag:</span>
@@ -49,7 +49,7 @@
       <Card
         class="my-12 py-4 px-6 text-primary-dark font-semibold tracking-wider"
       >
-        <Markdown :content="work.longDescription" />
+        <Markdown :content="work.longDescription" class="font-normal" />
       </Card>
     </Container>
   </div>

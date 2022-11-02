@@ -4,11 +4,13 @@
       <img src="@/assets/dist/img/coffee.gif" alt="" />
     </div>
     <div class="w-3/5 h-full">
-      <ul class="h-full flex flex-col justify-evenly">
-        <li class="text-primary-dark text-xl font-bold">WONG YUEN LAM</li>
-        <li class="text-primary-dark">... as Felix</li>
-        <li class="text-primary-dark">ID: C8763</li>
-        <li class="text-primary-dark">PRO: Coffee drinker</li>
+      <ul
+        class="h-full flex flex-col justify-evenly font-rain dark:text-primary"
+      >
+        <li class="text-xl font-bold">WONG YUEN LAM</li>
+        <li>... as Felix</li>
+        <li>ID: C8763</li>
+        <li>PRO: Coffee drinker</li>
       </ul>
     </div>
   </Card>
