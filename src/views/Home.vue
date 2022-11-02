@@ -6,18 +6,15 @@
       title="About Me"
       class="text-primary-dark tracking-wide font-semibold text-lg"
     >
+      <p>A student who loves developing games, website, small artworks</p>
       <p>
-        A student boi who loves developing anything like games, website, artwork
-        (aka pixel art n 3D model), music... and more!
-      </p>
-      <p>
-        A human whose life sticks with programming, building blocks, and solving
+        A coder whose life sticks with programming, building blocks, and solving
         problems.
       </p>
-      <p>A gamer hopes to wear NervGear and kills slime in fantasy world</p>
+      <p>A gamer hopes to wear NervGear and I can't find the logout button</p>
       <p>
-        A 0.000000001% musician(?) who plays BAAAAASS and drum, taking cover
-        once in a while
+        A non-professional musician who plays BASS and drum, occasionally record
+        covers
       </p>
     </TSection>
     <TSection title="Journey" class="h-full">
