@@ -5,8 +5,8 @@
     <TSection title="About Me" class="text-primary-dark tracking-wide text-lg">
       <p>A student who loves developing games, website, small artworks</p>
       <p>
-        A coder whose life sticks with programming, building blocks, and solving
-        problems.
+        A coder who's bad at storytelling, but love to build new mechanics &
+        functionalities
       </p>
       <p>A gamer hopes to wear NervGear and I can't find the logout button</p>
       <p>
