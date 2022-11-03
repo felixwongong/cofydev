@@ -13,8 +13,8 @@
       />
       <LinkCard
         fa="fab fa-youtube"
-        href="https://www.youtube.com/channel/UCc0dsf3mXT45amTJbyvdI6w"
-        hrefInfo="Some random streaming"
+        href="https://www.youtube.com/channel/UCA09RZ_b5ojSlr-5Jnvw3iA"
+        hrefInfo="Some random videos"
       />
       <LinkCard
         fa="fab fa-itch-io"
